@@ -3,30 +3,34 @@
 using namespace std;
 
 // } Driver Code Ends
-
 class Solution{
   public:
     vector<int> duplicates(long long arr[], int n) {
-        set<int> ans;
-        
-        sort(arr, arr + n);
-        
-        for(int i = 0; i < n - 1; i++) {
-            if(arr[i] == arr[i + 1]) {
-                ans.insert(arr[i]);
-                
+        sort(arr,arr+n);
+
+        vector <int> v1;
+        // int v1len = v1.size();
+        for ( int i=0;i<n-1;i++){
+            if ( arr[i]==arr[i+1]){
+                if (v1.empty()){
+                    v1.push_back(arr[i]);
+                }
+                else if(!v1.empty() && v1.back()!=arr[i]){
+                    v1.push_back(arr[i]);
+                }
             }
         }
-        
-        if(ans.empty()) {
-            ans.insert(-1);
+        // if duplicates are not found then return -1
+        if(v1.empty()){
+            v1.push_back(-1);
+            return v1;
         }
-        
-        vector<int> output(ans.begin(), ans.end());
-        
-        return output;
+        // else sort the array and return it.
+        sort(v1.begin(),v1.end());
+        return v1;// code here
     }
 };
+
 
 //{ Driver Code Starts.
 int main() {
