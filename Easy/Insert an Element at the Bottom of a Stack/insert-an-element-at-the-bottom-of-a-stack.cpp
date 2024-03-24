@@ -10,21 +10,24 @@ using namespace std;
 
 class Solution{
 public:
-    stack<int> insertAtBottom(stack<int> St,int X){
-        if(St.empty()){
-            St.push(X);
-            return St;
+    stack<int> insertAtBottom(stack<int> st,int x){
+        stack<int> s;
+        while(!st.empty()){
+            s.push(st.top());
+            st.pop();
         }
-  
-        int temp = St.top();
-        St.pop();
-        //recursive call
-        St = insertAtBottom(St, X);
-        //BT
-        St.push(temp);
-        return St;   
+        st.push(x);
+        
+        while(!s.empty()){
+            st.push(s.top());
+            s.pop();
+        }
+        
+        return st;
     }
 };
+
+
 
 //{ Driver Code Starts.
 
