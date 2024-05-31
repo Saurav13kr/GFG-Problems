@@ -1,11 +1,8 @@
-//{ Driver Code Starts
-//Initial Template for Java
 
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-class GFG
-{
+class GFG{
     public static void main(String[] args) throws IOException
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -20,14 +17,7 @@ class GFG
         }
     }
 }
-
-// } Driver Code Ends
-
-
-//User function Template for Java
-
-class Solution
-{
+class Solution{
     public long closestPalindrome(long num)
     {
         // Code here
