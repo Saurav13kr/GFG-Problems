@@ -7,9 +7,11 @@ using namespace std;
 // } Driver Code Ends
 // User function Template for C++
 
-class Solution{
+class Solution
+{
     public:
-    string findOrder(string dict[], int N, int K) {
+    string findOrder(string dict[], int N, int K) 
+{
     unordered_map<char,vector<char>>mp;
     for(int i=0;i<N-1;i++){
     string s1=dict[i];
