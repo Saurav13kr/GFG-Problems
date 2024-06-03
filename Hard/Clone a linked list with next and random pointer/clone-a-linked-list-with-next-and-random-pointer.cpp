@@ -3,7 +3,8 @@
 
 using namespace std;
 /* Link list Node */
-struct Node {
+struct Node 
+{
     int data;
     Node *next;
     Node *arb;
