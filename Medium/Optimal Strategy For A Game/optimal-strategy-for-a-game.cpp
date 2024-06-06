@@ -2,10 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-
-//Function to find the maximum possible amount of money we can win.
-class Solution{
+class Solution {
     public:
     
     long long fun(int i,int j,int arr[], vector<vector<long long>> &dp)
@@ -27,8 +24,6 @@ class Solution{
     }
 };
 
-
-//{ Driver Code Starts.
 int main() 
 {
    
