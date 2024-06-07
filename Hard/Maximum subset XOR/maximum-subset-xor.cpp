@@ -1,12 +1,7 @@
 //{ Driver Code Starts
 #include<bits/stdc++.h>
 using namespace std;
-
-// } Driver Code Ends
-// Function to return maximum XOR subset in set[]
-
-class Solution
-{
+class Solution {
     public:
     int maxSubsetXOR(int arr[], int N)
     {
