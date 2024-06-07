@@ -1,12 +1,10 @@
-//{ Driver Code Starts
-// Initial Template for Java
+
 
 import java.io.*;
 import java.util.*;
 
 class GFG {
-    public static void main(String[] args) throws IOException 
-    {
+    public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int t;
         t = sc.nextInt();
