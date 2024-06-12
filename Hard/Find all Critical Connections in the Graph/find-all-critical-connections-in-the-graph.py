@@ -25,10 +25,6 @@ class Solution:
                 dfs(i, -1, disc, low, bridges)
         return sorted(bridges)
         
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
-
 import sys
 sys.setrecursionlimit(10**6)
 
