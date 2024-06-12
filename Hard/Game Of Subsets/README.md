@@ -28,6 +28,7 @@ prime 3.</span></pre>
 <pre><span style="font-size:18px"><strong>Input:
 </strong>N : 3
 arr : {2, 2, 3}<strong>
+	
 Output: 5</strong><strong>
 Explanantion:
 </strong>The good subsets are : {2}, {2}, {2, 3}, {2, 3}, {3}</span></pre>
@@ -37,7 +38,6 @@ The task is to complete the function <strong>goodSubsets</strong>() which takes 
 
 <p><span style="font-size:18px"><strong>Expected Time Complexity: </strong>O(NlogN)<br>
 <strong>Expected Space Complexity: </strong>O(N)</span></p>
-
 <p><span style="font-size:18px"><strong>Constraints:</strong></span></p>
 
 <ul>
