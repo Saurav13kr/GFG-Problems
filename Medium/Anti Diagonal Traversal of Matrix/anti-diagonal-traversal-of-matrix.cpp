@@ -2,12 +2,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-// } Driver Code Ends
 class Solution {
   public:
-    vector<int> antiDiagonalPattern(vector<vector<int>> matrix) 
-    {
+    vector<int> antiDiagonalPattern(vector<vector<int>> matrix) {
         // Code here
         int currRow=0;
         int currCol=0;
