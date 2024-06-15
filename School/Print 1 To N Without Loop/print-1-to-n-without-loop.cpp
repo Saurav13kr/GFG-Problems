@@ -2,9 +2,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-// } Driver Code Ends
-class Solution{
+class Solution
+{
 
     public:
     //Complete this function
@@ -17,11 +16,7 @@ class Solution{
         }
     }
 };
-
-//{ Driver Code Starts.
-/* Driver program to test printNos */
-int main()
-{
+int main(){
     int T;
     
     //taking testcases
