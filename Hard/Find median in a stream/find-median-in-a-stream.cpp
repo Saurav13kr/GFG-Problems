@@ -1,13 +1,7 @@
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
-
-
-
-// } Driver Code Ends
-
-class Solution
-{
+class Solution{
     public:
     //Function to insert heap.
     priority_queue<int> s;
