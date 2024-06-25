@@ -22,9 +22,6 @@ class Solution:
                     else:
                         dp[i][j][k]=max((dp[i-1][j][k],dp[i][j-1][k],dp[i][j][k-1]))
         return dp[n1][n2][n3]
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
 
 if __name__ == '__main__':
 
