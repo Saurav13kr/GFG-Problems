@@ -9,7 +9,6 @@ class Node:
 """
 
 class Solution:
-    # Function to find the minimum element in the given BST.
     def minValue(self, root):
         if root.left == None:
             return root.data
