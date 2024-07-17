@@ -7,8 +7,7 @@ class Solution
 {
     public:
     //Function to find the maximum number of meetings that can
-   int maxMeetings(int start[], int end[], int n)
-    {
+   int maxMeetings(int start[], int end[], int n) {
         // Your code here
         vector<pair<int,int>>pa;
         for(int i=0;i<n;i++)
