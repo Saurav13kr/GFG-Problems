@@ -10,7 +10,8 @@ Output: <br></strong>6
 <pre><span style="font-size: 18px;"><strong>Input:</strong>
 5
 1 2 3 4 5
-<strong>Output:<br></strong>5
+<strong>
+Output:<br></strong>5
 <strong>Explanation: <br></strong>Highest element of array a[] is 5.</span>
 </pre>
 <p><span style="font-size: 18px;"><strong>Your Task:</strong><br>You don't need to read or print anything. Your task is to complete the function <strong>findPeakElement()&nbsp;</strong>which takes integer <strong>n</strong>, and the array <strong>a[]</strong> as the input parameters and returns the highest element of the array.</span></p>
