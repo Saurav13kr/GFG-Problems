@@ -20,7 +20,8 @@ class Solution:
                         visited.add((nx, ny))
                         stack.append((nx, ny))
                         component.append((nx, ny))
-            return size, component
+            return size,
+            component
     
         visited = set()
         group_sizes = {}
