@@ -12,11 +12,13 @@ public class Main {
 
         int t = Integer.parseInt(br.readLine().trim());
 
-        while (t-- > 0) {
+        while (t-- > 0) 
+        {
             String s[] = br.readLine().trim().split(" ");
             int n = Integer.parseInt(s[0]), m = Integer.parseInt(s[1]);
             int edges[][] = new int[m][3];
-            for (int i = 0; i < m; i++) {
+            for (int i = 0; i < m; i++) 
+            {
                 s = br.readLine().trim().split(" ");
                 edges[i][0] = Integer.parseInt(s[0]);
                 edges[i][1] = Integer.parseInt(s[1]);
@@ -44,7 +46,8 @@ public class Main {
             }
         }
         int sum = 0;
-        for (int i = 1; i < list.size() - 1; i++) {
+        for (int i = 1; i < list.size() - 1; i++) 
+        {
             if (!hm.containsKey(list.get(i)) ||
                 !hm.get(list.get(i)).containsKey(list.get(i + 1)))
                 return false;
