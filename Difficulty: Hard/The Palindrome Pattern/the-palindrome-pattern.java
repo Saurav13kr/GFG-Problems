@@ -1,7 +1,3 @@
-//{ Driver Code Starts
-// Initial Template for Java
-
-// Initial Template for Java
 
 import java.io.*;
 import java.util.*;
@@ -40,7 +36,8 @@ class Solution {
     public String pattern(int[][] arr) {
         // Code here
         String ans="-1";
-        for(int i=0;i<arr.length;i++){
+        for(int i=0;i<arr.length;i++)
+        {
             if(palindromeRow(arr[i])){
                 return String.valueOf(i)+" R";
             }
