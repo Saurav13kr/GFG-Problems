@@ -37,7 +37,8 @@ int main() {
         cin >> d2;
         head2 = new Node(d2);
         tail2 = head2;
-        while (n2-- > 1) {
+        while (n2-- > 1) 
+        {
             cin >> tmp;
             tail2->next = new Node(tmp);
             tail2 = tail2->next;
@@ -47,8 +48,6 @@ int main() {
     }
     return 0;
 }
-
-// } Driver Code Ends
 
 
 /*
