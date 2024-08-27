@@ -1,6 +1,3 @@
-//{ Driver Code Starts
-// Initial template for C++
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -10,7 +7,8 @@ using namespace std;
 
 class Solution {
   public:
-    int binarysearch(int arr[], int n, int k) {
+    int binarysearch(int arr[], int n, int k)
+{
       int l=0;
        int h=n-1;
        int mid=0;
