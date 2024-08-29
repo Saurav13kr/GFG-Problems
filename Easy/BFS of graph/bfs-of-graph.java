@@ -1,5 +1,4 @@
-//{ Driver Code Starts
-// Initial Template for Java
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -18,9 +17,8 @@ class GFG {
                 String[] S = br.readLine().trim().split(" ");
                 int u = Integer.parseInt(S[0]);
                 int v = Integer.parseInt(S[1]);
-                adj.get(u).add(v);
-                // adj.get(v).add(u);
-            }
+                adj.get(u).add(v);}
+        }
             Solution obj = new Solution();
             ArrayList<Integer> ans = obj.bfsOfGraph(V, adj);
             for (int i = 0; i < ans.size(); i++)
