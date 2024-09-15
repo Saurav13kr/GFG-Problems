@@ -1,4 +1,3 @@
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -7,8 +6,7 @@ class GFG{
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine().trim());
-        while(T-->0)
-        {
+        while(T-->0){
             long num = Long.parseLong(br.readLine().trim());
             Solution obj = new Solution();
             long ans = obj.closestPalindrome(num);
