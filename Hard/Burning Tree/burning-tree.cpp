@@ -21,8 +21,6 @@ Node *buildTree(string str) {
     if (str.length() == 0 || str[0] == 'N')
         return NULL;
 
-    // Creating vector of strings from input
-    // string after spliting by space
     vector<string> ip;
 
     istringstream iss(str);
@@ -48,9 +46,8 @@ Node *buildTree(string str) {
         string currVal = ip[i];
 
         // If the left child is not null
-        if (currVal != "N") {
-
-            // Create the left child for the current Node
+        if (currVal != "N") 
+        {
             currNode->left = new Node(stoi(currVal));
 
             // Push it to the queue
