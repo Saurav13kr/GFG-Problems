@@ -10,7 +10,8 @@ using namespace std;
 
 class Solution {
   public:
-   void solve(set<vector<int>> &sv, vector<int> arr, int ind, int n) {
+   void solve(set<vector<int>> &sv, vector<int> arr, int ind, int n) 
+{
         // base case
         if(ind == n) {
             sv.insert(arr);
