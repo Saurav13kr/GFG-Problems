@@ -3,7 +3,8 @@
 <pre><span style="font-size: 18px;"><strong>Input:<br></strong>LinkedList1: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6
 LinkedList2: 99-&gt;59-&gt;42-&gt;20
 <strong>Output: </strong>false<br><strong>Explanation:<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700585/Web/Other/blobid0_1719550109.png" width="400" height="140"><br></strong>As shown in figure linkedlists are not identical.</span></pre>
-<pre><span style="font-size: 18px;"><strong>Input:
+<pre>
+  <span style="font-size: 18px;"><strong>Input:
 </strong>LinkedList1: 1-&gt;2-&gt;3-&gt;4-&gt;5
 LinkedList2: 1-&gt;2-&gt;3-&gt;4-&gt;5
 <strong>Output: </strong>true<br><strong>Explanation: <br></strong></span><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700585/Web/Other/blobid2_1719550498.png" width="400" height="140"> <br><span style="font-size: 14pt;">As shown in figure both are identical.</span></pre>
