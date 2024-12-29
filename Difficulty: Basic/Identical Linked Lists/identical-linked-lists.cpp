@@ -17,7 +17,8 @@ struct Node {
 
 bool areIdentical(struct Node *head1, struct Node *head2);
 
-int main() {
+int main() 
+{
     int T;
     cin >> T;
     while (T--) {
