@@ -7,24 +7,14 @@ class Node {
     int data;
     Node next;
 
-    Node(int x) {
+    Node(int x)
+    {
         data = x;
         next = null;
     }
 }
 
 
-// } Driver Code Ends
-/*
-class Node {
-    int data;
-    Node next;
-
-    public Node(int data){
-        this.data = data;
-    }
-}
-*/
 
 class Solution {
     public void deleteAlt(Node head) {
