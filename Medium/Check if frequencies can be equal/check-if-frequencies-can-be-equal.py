@@ -20,12 +20,8 @@ class Solution:
                 max_freq = max(freq_count.keys())
                 min_freq = min(freq_count.keys())
                 if (min_freq == 1 and freq_count[min_freq] == 1) or (max_freq - min_freq == 1 and freq_count[max_freq] == 1):
-                    return True
-        
+                    return True        
         return False  
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
 
 if __name__ == "__main__":
 	T=int(input())
