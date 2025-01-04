@@ -17,7 +17,8 @@ void help(vector<int>&arr,int n,int k,int i,int sum,vector<int>&temp,set<vector<
     
     if(i==n)return;
     help(arr,n,k,i+1,sum,temp,st);
-    if(sum+arr[i]<=k){
+    if(sum+arr[i]<=k)
+    {
         temp.push_back(arr[i]);
         help(arr,n,k,i+1,sum+arr[i],temp,st);
         temp.pop_back();
@@ -35,11 +36,6 @@ void help(vector<int>&arr,int n,int k,int i,int sum,vector<int>&temp,set<vector<
     }
 
 };
-
-
-
-//{ Driver Code Starts.
-
 
 int main()
 {
