@@ -16,7 +16,8 @@ class Solution
         }
     }
 };
-int main(){
+int main()
+{
     int T;
     
     //taking testcases
