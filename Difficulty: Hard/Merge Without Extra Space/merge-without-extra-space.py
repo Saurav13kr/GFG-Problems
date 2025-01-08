@@ -27,7 +27,8 @@ if __name__ == "__main__":
         b = list(map(int, input().strip().split()))
 
         # Create solution object and merge the arrays
-        solution = Solution()
+        solution = 
+        Solution()
         solution.mergeArrays(a, b)
 
         # Output both arrays in the same line space-separated
