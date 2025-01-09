@@ -19,7 +19,8 @@ public:
         int closestSum = INT_MIN; // Initialize closestSum with the minimum integer value
 
         // Iterate through each element
-        for(int i = 0; i < arr.size() - 2; i++){
+        for(int i = 0; i < arr.size() - 2; i++)
+        {
             int start = i + 1; // Initialize start pointer
             int end = arr.size() - 1; // Initialize end pointer
 
