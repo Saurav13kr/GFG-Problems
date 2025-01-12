@@ -17,7 +17,8 @@ class Solution {
             int children = 0;
             visited[u] = true;
             discTime[u] = low[u] = ++time;
-            for(auto it=adj[u].begin(); it!=adj[u].end(); ++it) {
+            for(auto it=adj[u].begin(); it!=adj[u].end(); ++it)
+		    {
                 int v = *it;
                 if(!visited[v]) {
                     ++children;
