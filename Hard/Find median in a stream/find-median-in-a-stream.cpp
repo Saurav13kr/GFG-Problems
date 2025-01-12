@@ -8,7 +8,8 @@ class Solution{
     priority_queue<int,vector<int>,greater<int>> g;
     void insertHeap(int &x)
     {
-        if(s.empty()!=false || x < s.top()){
+        if(s.empty()!=false || x < s.top())
+	{
             s.push(x);
         }else{
             g.push(x);
