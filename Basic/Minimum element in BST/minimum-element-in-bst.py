@@ -16,11 +16,6 @@ class Solution:
         else:
             return self.minValue(root.left)
 
-#{ 
- # Driver Code Starts
-
-#Initial Template for Python 3
-
 from collections import deque
 # Tree Node
 class Node:
@@ -61,8 +56,7 @@ def buildTree(s):
         
         # If the left child is not null
         if(currVal!="N"):
-            
-            # Create the left child for the current node
+
             currNode.left=Node(int(currVal))
             
             # Push it to the queue
