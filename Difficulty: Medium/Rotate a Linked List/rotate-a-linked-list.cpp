@@ -39,31 +39,28 @@ struct Node {
 class Solution {
   public:
     Node* rotate(Node* head, int k) {
-        Node* end = head;
-        int cnt =0;
-        
-        while(end->next != nullptr)
-        {
-            cnt++;
-            end =end->next;
+        if(k==0)return head;
+        int len=1;
+        Node* temp=head;
+        while(temp->next){
+            temp=temp->next;
+            len++;
         }
-        cnt++;
-        if(cnt == k){
+        k=k%len;
+        if(k==0)
+        {
             return head;
         }
-        Node* start =head;
-        k--;
-        while(k--)
-        {
-            start=start->next;
-        }
-        Node* newstart = start->next;
-        start->next =nullptr;
-        end->next = head;
-        
-        return newstart;
+            temp->next=head;
+            Node* nwt=head;
+            for(int i=1;i<k;i++)
+             nwt=nwt->next;
+            Node *nwh=nwt->next;
+            nwt->next=NULL;
+            return nwh;
     }
 };
+
 
 //{ Driver Code Starts.
 
@@ -102,6 +99,7 @@ int main() {
         Solution ob;
         head = ob.rotate(head, k);
         printList(head);
+        cout << "~\n";
     }
     return 1;
 }
