@@ -20,8 +20,6 @@ public:
         next = nullptr;
         prev = nullptr;
     }
-
-    // Parameterized Constructor
     Node(int key, int value) {
         this->key = key;
         this->value = value;
@@ -37,7 +35,8 @@ private:
     Node* tail;
     unordered_map<int, Node*> mp;
 
-    void insertAtHead(Node* node) {
+    void insertAtHead(Node* node) 
+    {
         Node* temp = head->next;
         head->next = node;
         node->next = temp;
