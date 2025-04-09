@@ -24,38 +24,29 @@ class GFG {
 }
 // } Driver Code Ends
 
+
 class Solution {
+    private boolean dfs(int isTargetedNode,int node,List<List<Integer>>adj,boolean []visited){
+        visited[node]=true;
+        for(int x:adj.get(node)){
+            if(x==isTargetedNode) return true;
+            if(!visited[x] && dfs(isTargetedNode,x,adj,visited)) return true;
+        }
+        return false;
+    }
     public boolean isCyclic(int V, int[][] edges) {
-        List<List<Integer>> graph = new ArrayList<>() ; 
-        int[] indegree = new int[V] ; 
-        for(int i = 0 ; i < V ; i++){
-            graph.add(new ArrayList<>()); 
+        List<List<Integer>>adj = new ArrayList<>();
+        for(int i=0;i<V;i++){
+            adj.add(new ArrayList<>());
         }
-        for(int i = 0 ; i < edges.length ; i++){
-            int u = edges[i][0] ; 
-            int v = edges[i][1] ; 
-            graph.get(u).add(v) ; 
-            indegree[v]++ ;
+        for(int i=0;i<edges.length;i++){
+            adj.get(edges[i][0]).add(edges[i][1]);
         }
-        Queue<Integer> q = new LinkedList<>() ; 
-        for(int i = 0 ; i < V ; i++){
-            if(indegree[i] == 0){
-                q.offer(i); 
-            }
+        for(int i=0;i<V;i++){
+            boolean []visited = new boolean[V];
+            if(!visited[i] && dfs(i,i,adj,visited)) return true;
         }
-        List<Integer> result = new ArrayList<>() ; 
-        while(!q.isEmpty()){
-            int node = q.poll() ; 
-            result.add(node) ;
-            for(int nbr : graph.get(node))
-            {
-                indegree[nbr]-- ; 
-                if(indegree[nbr] == 0){
-                    q.offer(nbr) ; 
-                }
-            }
-        }
-        return result.size() != V ; 
-        
+        return false;
     }
 }
+
