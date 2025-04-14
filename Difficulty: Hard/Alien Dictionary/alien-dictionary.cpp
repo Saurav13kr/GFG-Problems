@@ -23,12 +23,14 @@ class Solution {
         }
 
         // Build graph from adjacent words
-        for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n - 1; i++) 
+        {
             string str1 = words[i];        
             string str2 = words[i + 1];        
             int len = min(str1.size(), str2.size());
             bool check = false;
-            for (int ind = 0; ind < len; ind++) {
+            for (int ind = 0; ind < len; ind++) 
+            {
                 if (str1[ind] != str2[ind]) {
                     adj[str1[ind] - 'a'].push_back(str2[ind] - 'a');
                     indegree[str2[ind] - 'a']++;
