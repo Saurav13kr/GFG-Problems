@@ -8,7 +8,8 @@ import java.util.*;
 
 class Solution {
 
-    int countPairs(int arr[], int target) {
+    int countPairs(int arr[], int target) 
+    {
         HashMap<Integer,Integer> map=new HashMap<>();
         int count=0;
         
@@ -27,7 +28,8 @@ class Solution {
 //{ Driver Code Starts.
 
 class Main {
-    public static void main(String args[]) throws IOException {
+    public static void main(String args[]) throws IOException 
+    {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(read.readLine());
 
