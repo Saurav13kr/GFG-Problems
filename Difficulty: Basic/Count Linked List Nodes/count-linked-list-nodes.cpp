@@ -6,22 +6,14 @@ struct Node {
     int data;
     struct Node *next;
 
-    Node(int x) {
+    Node(int x) 
+{
         data = x;
         next = NULL;
     }
 };
 
 
-// } Driver Code Ends
-/* Link list node */
-/*
-struct Node
-{
-    int data;
-    Node* next;
-    Node(int x) {  data = x;  next = NULL; }
-}; */
 
 class Solution {
   public:
@@ -51,7 +43,8 @@ int main() {
         }
         struct Node *head = new Node(arr[0]);
         struct Node *tail = head;
-        for (int i = 1; i < arr.size(); ++i) {
+        for (int i = 1; i < arr.size(); ++i)
+            {
             tail->next = new Node(arr[i]);
             tail = tail->next;
         }
