@@ -25,7 +25,8 @@ class Solution {
         ans+=solve(i,cnt+1,sum+a[i],n,k,a);  
         return dp[i][cnt][sum]=ans;
     }
-    int countWaystoDivide(int n,int k) {
+    int countWaystoDivide(int n,int k) 
+{
         vector<int>a(n);
         memset(dp,-1,sizeof(dp));
         for(int i=0;i<n;i++)a[i]=i+1;
