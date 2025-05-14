@@ -65,7 +65,8 @@ int main() {
         vector<string> A;
         string s;
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) 
+        {
             cin >> s;
             A.push_back(s);
         }
