@@ -67,7 +67,8 @@ class IntMatrix:
         matrix = []
         #matrix input
         for _ in range(n):
-            matrix.append([int(i) for i in input().strip().split()])
+            matrix.append([int(i) 
+                           for i in input().strip().split()])
         return matrix
 
     def Print(self, arr):
